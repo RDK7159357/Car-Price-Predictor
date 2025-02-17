@@ -9,9 +9,8 @@ Theme Toggle : Smooth transition between light and dark themes with intuitive su
 Cross-Browser Compatibility : Fully responsive and optimized for modern browsers.
  🛠️ Technologies Used
 Frontend : HTML5, CSS3, JavaScript (Vanilla JS), Bootstrap 5
-Backend : Flask/Django/FastAPI (or any backend framework you're using)
-Machine Learning : Python (e.g., Scikit-learn, TensorFlow, or other libraries for price prediction)
-Deployment : Hosted on platforms like Heroku, Vercel, or AWS for seamless access.
+Backend : Flask
+Machine Learning : Python (Scikit-learn, numpy, pandas)
  🚀 How It Works
 Users input details about their vehicle (manufacturer, model, year, fuel type, kilometers driven).
 The app sends the data to the backend, where a pre-trained machine learning model processes the inputs.
