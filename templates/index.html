@@ -204,7 +204,7 @@
                             <div class="mb-4">
                                 <label class="form-label fw-medium">Kilometers Driven</label>
                                 <input type="number" class="form-control" id="kilo_driven" name="kilo_driven"
-                                       placeholder="Enter kilometers" required>
+                                       placeholder="Enter kilometers" required min="0">
                             </div>
                             <button type="button" class="btn predict-btn w-100" onclick="send_data()">
                                 Estimate Value
@@ -219,6 +219,16 @@
         </div>
     </div>
     <script>
+
+document.getElementById("kilo_driven").addEventListener("input", function () {
+      if (this.value < 0) {
+          alert("Enter positive value only");
+          this.value = ""; // Clear the input field
+      }
+      else if(this.value>1000000){
+        alert("Your car's approximate value is in b/w 0 to ₹10000")
+      }
+  });
         // Theme Toggle Logic
         const themeToggle = document.getElementById('theme-toggle');
         const sunIcon = document.getElementById('sun-icon');
